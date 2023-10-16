@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Resultados";
+}
+
+<div class="container-info">
+        <h2>Submitted Info</h2>
+        @model Survey
+        <span>
+            <label for="Name">Name:</label>
+            <p>@Model.Name</p>
+        </span>
+        <span>
+            <label for="Date">Date:</label>
+            <p>@Model.Date</p>
+        </span>
+        <span>
+            <label for="Location">Dojo Location:</label>
+            <p>@Model.Location</p>
+        </span>
+        <span>
+            <label for="Language">Favorite Language:</label>
+            <p>@Model.Language</p>
+        </span>
+        <span>
+            <label for="Comment">Comment:</label>
+            <p>@Model.Comment</p>
+        </span>
+        <a href="/"><button class="back">Go back</button></a>
+    </div>
